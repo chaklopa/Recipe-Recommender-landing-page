@@ -5,63 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Driven Recipe Recommender</title>
     <style>
-        /* Add your custom styles here */
-    </style>
-</head>
-<body>
-    <h1>Welcome to the AI-Driven Recipe Recommender!</h1>
-    <video autoplay loop muted>
-        <source src="cooking_magic.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <a href="content.html"><button>Explore More</button></a>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipix Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff5e4;
-            color: #333;
-            text-align: center;
-            padding-top: 50px;
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
         }
-        h1 {
-            color: #e67e22;
-            font-size: 2.5em;
+        video {
+            max-width: 100%; /* Ensures the video is responsive */
+            z-index: -1; /* Ensures the button is clickable on top of the video */
         }
-        p {
+        .explore-button {
+            margin-top: -50px; /* Adjust as necessary to position the button */
+            z-index: 1; /* Ensures the button is above the video */
+        }
+        button {
+            padding: 10px 20px;
             font-size: 1.2em;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #e67e22;
-            color: #fff;
-            padding: 10px 30px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .cta-button:hover {
-            background-color: #d35400;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Elevate Every Meal with a Touch of Recipix!</h1>
-    <p>Imagine having a culinary expert in your pocket, ready to turn your everyday ingredients into extraordinary meals. Recipix offers that and more, ensuring each dish caters to your health and happiness.</p>
-    <a href="#" class="cta-button">Experience Elevated Cooking. Sign up for early access!</a>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="cooking_magic.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="content.html" class="explore-button"><button>Explore More</button></a>
+    </div>
 </body>
 </html>
-
