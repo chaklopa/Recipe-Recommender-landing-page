@@ -6,34 +6,33 @@
     <title>AI-Driven Recipe Recommender</title>
     <style>
         .video-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh; /* Full height of the viewport */
+            position: relative;
+            text-align: center;
         }
         video {
-            max-width: 100%; /* Ensures the video is responsive */
-            z-index: -1; /* Ensures the button is clickable on top of the video */
+            width: 100%;
+            height: auto;
         }
-        .explore-button {
-            margin-top: -50px; /* Adjust as necessary to position the button */
-            z-index: 1; /* Ensures the button is above the video */
+        .video-container a {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         button {
             padding: 10px 20px;
             font-size: 1.2em;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="video-container">
+        <h1>Welcome to the AI-Driven Recipe Recommender!</h1>
         <video autoplay loop muted>
             <source src="cooking_magic.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <a href="content.html" class="explore-button"><button>Explore More</button></a>
+        <a href="content.html"><button>Explore More</button></a>
     </div>
 </body>
 </html>
